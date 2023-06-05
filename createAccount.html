@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Login and Register Form </title>
+
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+<div class="container">         <! -- white block! on page-->
+
+  <form class="form" id="createAccount">
+    <h1 class="form__title">Create Account</h1>
+    <div class="form__message form__message--error"></div> <! -- Invalid UserName or Password -->
+
+    <div class="form__input-group">
+      <input type="text" class="form__input" autofocus placeholder="Input Email Address">
+      <div class="form__input-error-message"></div> <! -- Error Message! -->
+    </div>
+
+
+    <div class="form__input-group">
+      <input type="password" class="form__input" autofocus placeholder="Input Password">
+      <div class="form__input-error-message"></div>
+    </div>
+    <div class="form__input-group">
+      <input type="password" class="form__input" autofocus placeholder="Confirm Password">
+      <div class="form__input-error-message"></div>
+    </div>
+
+
+    <div class="form__input-group">
+      <select class="form__input" id="operatingSystem">
+        <option value="">Choose Operating System Your Using</option>
+        <option value="linux">Linux</option>
+        <option value="mac">Mac</option>
+        <option value="windows">Windows</option>
+      </select>
+      <div class="form__input-error-message"></div>
+    </div>
+
+    <div class="form__input-group">
+      <input type="radio" id="genderMale" name="gender" value="male">
+      <label for="genderMale">Male</label>
+      <input type="radio" id="genderFemale" name="gender" value="female">
+      <label for="genderFemale">Female</label>
+      <div class="form__input-error-message"></div>
+    </div>
+
+    <button class="form__button" type="button">Continue</button>
+
+    <p class="form__text">
+      <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+    </p>
+
+  </form>
+</div>
+<script src="./JS/main.js"></script>
+
+</body>
+</html>
